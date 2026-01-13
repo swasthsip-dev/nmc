@@ -176,17 +176,48 @@ document.addEventListener("DOMContentLoaded", () => {
         return
       }
 
-      // Simulate form submission
-      // In production, replace this with actual form handling (e.g., API call)
-      showFormStatus("🎉 Thank you! Your message has been sent successfully.", "success")
+      // Google Apps Script URL
+      const scriptURL = "https://script.google.com/macros/s/AKfycbypL8DiLhPG29jn4l5fe5jlbb1j_u_Slud1raZXmQmgbb34H6OriymSM2BiwW8V8tJSgQ/exec"
 
-      // Reset form
-      contactForm.reset()
+      // UI Elements
+      const loader = document.getElementById("formLoader")
+      const successMsg = document.getElementById("formSuccess")
+      const errorMsg = document.getElementById("formError")
+      const submitBtn = contactForm.querySelector("button[type='submit']")
 
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        formStatus.style.display = "none"
-      }, 5000)
+      // Reset UI
+      successMsg.style.display = "none"
+      errorMsg.style.display = "none"
+      loader.style.display = "block"
+      submitBtn.disabled = true
+
+      // Create FormData object
+      const formData = new FormData(contactForm)
+
+      // Send data to Google Apps Script
+      fetch(scriptURL, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors"
+      })
+        .then(() => {
+          loader.style.display = "none"
+          successMsg.style.display = "block"
+          contactForm.reset()
+        })
+        .catch(error => {
+          console.error('Error!', error.message)
+          loader.style.display = "none"
+          errorMsg.style.display = "block"
+        })
+        .finally(() => {
+          submitBtn.disabled = false
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            successMsg.style.display = "none"
+            errorMsg.style.display = "none"
+          }, 5000)
+        })
     })
   }
 
@@ -301,4 +332,29 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("%c🌾 Namma Millets Café", "color: #8B5A2B; font-size: 24px; font-weight: bold;")
   console.log("%cOrganic & Homely Food - Rooted in Karnataka's Heritage", "color: #666; font-size: 14px;")
   console.log("%c📍 16th Cross, BTM 2nd Stage, Bengaluru", "color: #999; font-size: 12px;")
+  /* ============================================
+       Hero Background Slideshow
+       ============================================ */
+  const heroBg = document.querySelector(".hero-bg-image")
+  if (heroBg) {
+    const images = [
+      "images/bg2.jpg",
+      "images/bg1.png"
+    ]
+    let currentIndex = 0
+
+    // Preload images
+    images.forEach(src => {
+      const img = new Image()
+      img.src = src
+    })
+
+    // Set initial image immediately
+    heroBg.style.backgroundImage = `url("${images[0]}")`
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length
+      heroBg.style.backgroundImage = `url("${images[currentIndex]}")`
+    }, 5000) // Change image every 5 seconds
+  }
 })

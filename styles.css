@@ -286,10 +286,11 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/divine-heritage.jpg");
+  background-image: url("images/village-grains.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out;
   opacity: 0.6;
   z-index: 1;
 }
@@ -300,7 +301,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   background-image: var(--bg-pattern);
   opacity: 1;
   z-index: 2;
@@ -338,22 +339,24 @@ h6 {
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin-bottom: var(--space-md);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--color-white);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 .hero-title .highlight {
-  color: var(--color-primary);
+  color: #FFD700;
+  /* Gold color */
   display: block;
 }
 
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: var(--text-dark);
+  color: var(--color-white);
   font-weight: 500;
   max-width: 600px;
   margin: 0 auto var(--space-lg);
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   animation: fadeInUp 0.8s ease 0.4s both;
 }
 
@@ -1541,7 +1544,18 @@ h6 {
 .glass-card-dark {
   background: linear-gradient(135deg, #1A4D2E, #245e39);
   position: relative;
-  color: white;
+  color: var(--color-white) !important;
+}
+
+.glass-card-dark h2,
+.glass-card-dark h3,
+.glass-card-dark h4,
+.glass-card-dark h5,
+.glass-card-dark h6,
+.glass-card-dark p,
+.glass-card-dark span,
+.glass-card-dark div {
+  color: var(--color-white) !important;
 }
 
 .icon-square {
