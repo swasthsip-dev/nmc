@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================
+         Namma Millets Café - Homepage
+         Karnataka Heritage Themed Millet Food Website
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Namma Millets Café">
+
+    <title>Namma Millets Café - Traditional Indian Health Drinks</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Discover Namma Millets Café's range of nourishing and healthy products. From Ragi Malt to Green Peas Malt, we provide high-quality, sustainable, and innovative products for your well-being.">
+    <meta name="keywords"
+        content="health drinks, healthy drinks, healthy drinks for adults, health drinks for adults, health drinks for men, healthy morning drinks, energy drink, energy drink powder, good energy drinks, best energy drink, energy drinks for teens, best energy drinks for tired adults, morning energy drink, healthy energy drinks, best natural energy drink">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Namma Millets Café - Traditional Indian Health Drinks">
+    <meta property="og:description"
+        content="Explore Namma Millets Café's range of nourishing and healthy products. From Ragi Malt to Green Peas Malt, we provide high-quality, sustainable, and innovative products for your well-being.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Namma Millets Café Products - Nourishing Goodness for a Healthy Life">
+    <meta name="twitter:description"
+        content="Explore Namma Millets Café's range of nourishing and healthy products. From Ragi Malt to Green Peas Malt, we provide high-quality, sustainable, and innovative products for your well-being.">
+    <meta name="twitter:image" content="images/logo.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B917CGTFH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8B917CGTFH');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts - Traditional Indian Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ============================================
+         Google Analytics Placeholder
+         Replace GA_MEASUREMENT_ID with your actual ID
+         ============================================ -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <img src="images/logo.png" alt="Namma Millets Café" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    <!-- ============================================
+         Navigation Header
+         Sticky navigation with hamburger menu for mobile
+         ============================================ -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Namma Millets Café Logo" class="logo-img">
+            </a>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">
+                            <span class="nav-icon">☰</span>
+                            Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span class="nav-icon">ℹ</span>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <span class="nav-icon">✉</span>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button for mobile menu -->
+                <div class="nav-close" id="nav-close">
+                    <span>&times;</span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         Hero Section
+         Karnataka Heritage Banner with Hampi/Mysore theme
+         ============================================ -->
+    <section class="hero" id="home">
+        <!-- Added hero background image -->
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-content container">
+            <div class="hero-badge">🌾 Organic & Homely Food</div>
+            <h1 class="hero-title">
+                Welcome to<br>
+                <span class="highlight">Namma Millets Café</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience the authentic taste of Karnataka's traditional millet-based drinks & snacks,
+                crafted with love and heritage.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#about" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+
+        <!-- Decorative Karnataka Heritage Elements -->
+        <div class="heritage-decoration">
+            <div class="temple-silhouette left"></div>
+            <div class="temple-silhouette right"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Heritage Banner
+         Showcasing Karnataka's rich cultural heritage
+         ============================================ -->
+    <section class="heritage-banner">
+        <div class="container">
+            <div class="heritage-content">
+                <div class="heritage-icon">🏛️</div>
+                <h2>Rooted in Karnataka's Rich Heritage</h2>
+                <p>From the majestic ruins of Hampi to the royal grandeur of Mysore Palace,
+                    our recipes carry the essence of Karnataka's timeless traditions.</p>
+            </div>
+        </div>
+        <div class="heritage-pattern-border"></div>
+    </section>
+
+    <!-- ============================================
+         Featured Products Section
+         Highlighting popular millet drinks
+         ============================================ -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🌟 Popular Choices</span>
+                <h2 class="section-title">Discover The Taste of Tradition</h2>
+                <p class="section-subtitle">Handcrafted millet drinks that nourish your body and soul</p>
+            </div>
+
+            <div class="featured-grid">
+                <!-- Featured Item 1 - Added real food images -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/ragi-drink.jpg" alt="Ragi Nuts Drink - Traditional Karnataka millet beverage">
+                        <span class="featured-badge">Best Seller</span>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Ragi Nuts</h3>
+                        <p>Ragi, Dry Fruits, Jaggery</p>
+                        <div class="featured-price">
+                            <span>Medium: ₹40</span>
+                            <span>Large: ₹55</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 2 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/moong-drink.jpg" alt="Moong Nuts Drink - Protein rich green gram beverage">
+                        <span class="featured-badge">Nutritious</span>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Moong Nuts</h3>
+                        <p>Moong, Milk, Dry Fruits, Jaggery</p>
+                        <div class="featured-price">
+                            <span>Medium: ₹49</span>
+                            <span>Large: ₹65</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 3 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/hurali-drink.jpg" alt="Hurali Nuts Drink - Horse gram traditional beverage">
+                        <span class="featured-badge">Traditional</span>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Hurali Nuts</h3>
+                        <p>Horse gram, Dry Fruits, Jaggery</p>
+                        <div class="featured-price">
+                            <span>Medium: ₹45</span>
+                            <span>Large: ₹60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 4 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/mixed-millets.jpg" alt="Mixed Millets Malt - Premium millet blend">
+                        <span class="featured-badge">Premium</span>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Mixed Millets Malt</h3>
+                        <p>Millets, Milk, Dry Fruits, Jaggery</p>
+                        <div class="featured-price">
+                            <span>Medium: ₹65</span>
+                            <span>Large: ₹85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light-texture">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase text-warning fw-bold">Organic & Homely</h5>
+                <h2 class="display-4 fw-bold">Our Authentic Menu</h2>
+                <p class="text-muted col-lg-6 mx-auto">Discover our range of healthy millet drinks and traditional
+                    snacks.</p>
+            </div>
+
+            <!-- Category: Exotic Healthy Drinks - Moong -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Moong (Green Gram) <span
+                    class="fs-6 fw-normal text-muted">- Exotic Healthy Drinks</span></h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/moong-drink.jpg" alt="Moong Nuts" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Moong Nuts</h4>
+                                <span class="badge bg-success-subtle text-success rounded-pill">Hot/Sweet</span>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Moong, Milk, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹49</span>
+                                <span>Large: ₹65</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/moong-drink.jpg" alt="Moong Nuts Dates" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Moong Nuts Dates</h4>
+                                <span class="badge bg-success-subtle text-success rounded-pill">Sugar Free</span>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">With Dates, No Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹59</span>
+                                <span>Large: ₹75</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Hurali (Horse Gram) -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Hurali (Horse Gram)</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/hurali-drink.jpg" alt="Hurali Nuts" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Hurali Nuts</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Horse gram, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹45</span>
+                                <span>Large: ₹60</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/hurali-drink.jpg" alt="Hurali Malt" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Hurali Malt</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Horse gram, Milk, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹55</span>
+                                <span>Large: ₹70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/hurali-drink.jpg" alt="Hurali Dates" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Hurali Dates</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Horse gram, Milk, Dry Fruits, Dates</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹65</span>
+                                <span>Large: ₹80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Ragi (Finger Millet) -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Ragi (Finger Millet)</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/ragi-drink.jpg" alt="Ragi Nuts" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Ragi Nuts</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Ragi, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹40</span>
+                                <span>Large: ₹55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/ragi-drink.jpg" alt="Ragi Malt" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Ragi Malt</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Ragi, Milk, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹50</span>
+                                <span>Large: ₹65</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/ragi-drink.jpg" alt="Ragi Dates" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Ragi Dates</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Ragi, Milk, Dry Fruits, Dates</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹60</span>
+                                <span>Large: ₹75</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Mixed Millet -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Mixed Millet</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/mixed-millets.jpg" alt="Mixed Millets Nuts" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Mixed Millets Nuts</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Millets, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹55</span>
+                                <span>Large: ₹75</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/mixed-millets.jpg" alt="Mixed Millets Malt" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Mixed Millets Malt</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Millets, Milk, Dry Fruits, Jaggery</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹65</span>
+                                <span>Large: ₹85</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/mixed-millets.jpg" alt="Mixed Millets Dates" class="menu-thumb shadow-sm">
+                            <div>
+                                <h4 class="fw-bold mb-1 fs-5">Mixed Millets Dates</h4>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-3">Millets, Milk, Dry Fruits, Dates</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between fw-bold text-primary-custom">
+                                <span>Medium: ₹75</span>
+                                <span>Large: ₹95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Salt and Spicy -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Salt and Spicy</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/ragi-drink.jpg" alt="Ragi Salted" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Ragi Salted</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Ragi, Dry Fruits etc.</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹40 | L: ₹55</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/moong-drink.jpg" alt="Moong Salted" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Moong Salted</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Moong, Dry Fruits etc.</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹45 | L: ₹60</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/mixed-millets.jpg" alt="Mixed Millet Salted" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Mixed Millet Salted</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Mixed Millet, Dry Fruits etc.</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹50 | L: ₹65</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/mixed-millets.jpg" alt="Jola Ganji" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Jola Ganji</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Jowar Porridge</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹45 | L: ₹60</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Refresh Drinks -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Refresh Drinks</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm d-flex align-items-center">
+                        <img src="images/smoothie.png" alt="ABC Malt" class="menu-thumb me-3 shadow-sm">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">ABC Malt</h5>
+                                <h5 class="fw-bold text-primary-custom mb-0">₹35</h5>
+                            </div>
+                            <p class="text-muted small mb-0">ABC Powder, Milk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm d-flex align-items-center">
+                        <img src="images/smoothie.png" alt="Badam Dry Fruits Malt" class="menu-thumb me-3 shadow-sm">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">Badam Dry Fruits Malt</h5>
+                                <h5 class="fw-bold text-primary-custom mb-0">₹30</h5>
+                            </div>
+                            <p class="text-muted small mb-0">Rich almond taste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Nutrition Shake -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Nutrition Shake</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/smoothie.png" alt="Sattu Smoothie" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Sattu Smoothie</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Roasted Chana, Milk, Dry Fruits</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹55 | L: ₹75</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/smoothie.png" alt="Banana Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Banana Nutrishake</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Banana, Milk, Dry Fruits</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹50 | L: ₹70</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/smoothie.png" alt="Oats Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Oats Nutrishake</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Oats, Banana, Milk, Dry Fruits</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹55 | L: ₹75</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/ragi-drink.jpg" alt="Ragi Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Ragi Nutrishake</h5>
+                        </div>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹55 | L: ₹75</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/moong-drink.jpg" alt="Moong Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Moong Nutrishake</h5>
+                        </div>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹59 | L: ₹79</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/hurali-drink.jpg" alt="Hurali Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Hurali Nutrishake</h5>
+                        </div>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹59 | L: ₹79</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/mixed-millets.jpg" alt="Millets Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Millets Nutrishake</h5>
+                        </div>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹65 | L: ₹85</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm">
+                        <div class="menu-card-header">
+                            <img src="images/smoothie.png" alt="Dry Fruits Nutrishake" class="menu-thumb shadow-sm">
+                            <h5 class="fw-bold mb-0 fs-6">Dry Fruits Nutrishake</h5>
+                        </div>
+                        <p class="text-muted small mb-3">Milk, Dry Fruits</p>
+                        <div class="mt-auto pt-2 border-top">
+                            <div class="small fw-bold text-primary-custom">M: ₹59 | L: ₹79</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Laddu -->
+            <h3 class="fw-bold text-secondary mb-4 border-bottom pb-2">Laddu</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm d-flex align-items-center">
+                        <img src="images/laddu.png" alt="Groundnut Laddu" class="menu-thumb me-3 shadow-sm">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">Groundnut Laddu</h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="small fw-bold text-primary-custom">Qty 1: ₹15</span>
+                                <span class="small fw-bold text-primary-custom">Qty 5: ₹70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-card p-4 h-100 bg-white rounded-4 shadow-sm d-flex align-items-center">
+                        <img src="images/laddu.png" alt="Flax Nuts Laddu" class="menu-thumb me-3 shadow-sm">
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="fw-bold mb-0">Flax Nuts Laddu</h5>
+                            </div>
+                            <p class="text-muted small mb-1">Brain Booster</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="small fw-bold text-primary-custom">Qty 1: ₹20</span>
+                                <span class="small fw-bold text-primary-custom">Qty 5: ₹95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="menu-note">
+                <p>📦 ₹5 extra for Parcel | 🍯 We use only Jaggery and Dates for Sweet</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="glass-card-dark p-5 rounded-5 text-center text-white position-relative overflow-hidden">
+                <div class="position-relative z-2">
+                    <h2 class="display-6 fw-bold mb-4">Good to Know</h2>
+                    <div class="row g-4 justify-content-center mb-5">
+                        <div class="col-md-3">
+                            <div class="p-3 border border-light rounded-4 h-100">
+                                <i class="fa-solid fa-heart-pulse fs-3 text-warning mb-2"></i>
+                                <h6 class="fw-bold">Heart Friendly</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 border border-light rounded-4 h-100">
+                                <i class="fa-solid fa-leaf fs-3 text-warning mb-2"></i>
+                                <h6 class="fw-bold">Kidney Support</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 border border-light rounded-4 h-100">
+                                <i class="fa-solid fa-person-dress fs-3 text-warning mb-2"></i>
+                                <h6 class="fw-bold">Menstrual Balance</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 border border-light rounded-4 h-100">
+                                <i class="fa-solid fa-droplet fs-3 text-warning mb-2"></i>
+                                <h6 class="fw-bold">Boosts Hemoglobin</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 border border-light rounded-4 h-100">
+                                <i class="fa-solid fa-shield-virus fs-3 text-warning mb-2"></i>
+                                <h6 class="fw-bold">Rich Antioxidants</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-start justify-content-center g-4">
+                        <div class="col-md-5">
+                            <div class="d-flex gap-3">
+                                <i class="fa-solid fa-bottle-droplet fs-3 text-warning"></i>
+                                <div>
+                                    <h5 class="fw-bold">No White Sugar</h5>
+                                    <p class="small text-white-50">We strictly use Jaggery, Dates, or Palm Sugar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="d-flex gap-3">
+                                <i class="fa-solid fa-box-open fs-3 text-warning"></i>
+                                <div>
+                                    <h5 class="fw-bold">Parcel Charges</h5>
+                                    <p class="small text-white-50">₹5 extra for takeaway parcels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         About Section
+         ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-badge">🌿 Our Story</span>
+                    <h2 class="section-title">Reviving Karnataka's Millet Heritage</h2>
+                    <p>
+                        At Namma Millets Café, we believe in the power of traditional foods.
+                        Our journey began with a simple mission - to bring back the nutritious
+                        millet-based drinks that our grandmothers made, using authentic recipes
+                        passed down through generations.
+                    </p>
+                    <p>
+                        Every drink we serve is made with carefully sourced organic millets,
+                        pure jaggery, and premium dry fruits. We use no artificial sweeteners
+                        or preservatives - just pure, wholesome goodness inspired by Karnataka's
+                        rich culinary heritage.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🌾</span>
+                            <span>100% Organic</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🏺</span>
+                            <span>Traditional Recipes</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💚</span>
+                            <span>No Preservatives</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍯</span>
+                            <span>Natural Sweeteners</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Added about section image -->
+                <div class="about-image">
+                    <img src="images/about-millets.jpg"
+                        alt="Organic millets - ragi, jowar, and other traditional grains">
+                    <div class="about-badge">
+                        <span>Serving Since</span>
+                        <strong>2020</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Vision & Mission Section
+         ============================================ -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <div class="vm-icon">🌿</div>
+                    <h3>Our Vision</h3>
+                    <p>To revive and promote Karnataka's traditional millet-based cuisine,
+                        making healthy eating accessible and enjoyable for everyone.</p>
+                </div>
+                <div class="vm-card">
+                    <div class="vm-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To serve authentic, organic, and homely millet drinks that nourish
+                        both body and soul, one sip at a time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Contact Section
+         ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📍 Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <span class="contact-icon">📍</span>
+                        <h4>Our Location</h4>
+                        <p>16th Cross, BTM 2nd Stage,<br>Bengaluru, Karnataka</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">⏰</span>
+                        <h4>Working Hours</h4>
+                        <div class="small text-muted mt-2">
+                            <div class="d-flex justify-content-between mb-1"><span>Mon:</span> <span
+                                    class="text-danger">Closed</span></div>
+                            <div class="d-flex justify-content-between mb-1"><span>Tue:</span> <span>7–11:30 am, 6–11
+                                    pm</span></div>
+                            <div class="d-flex justify-content-between mb-1"><span>Wed:</span> <span>7–11:30 am, 6–11
+                                    pm</span></div>
+                            <div class="d-flex justify-content-between mb-1"><span>Thu:</span> <span>7–11:30 am, 6–11
+                                    pm</span></div>
+                            <div class="d-flex justify-content-between mb-1"><span>Fri:</span> <span>7–11:30 am, 6–11
+                                    pm</span></div>
+                            <div class="d-flex justify-content-between mb-1"><span>Sat:</span> <span>7–11:30 am, 6–11
+                                    pm</span></div>
+                            <div class="d-flex justify-content-between"><span>Sun:</span> <span>7–11:30 am, 6–11
+                                    pm</span></div>
+                        </div>
+                        <p class="small text-muted fst-italic mt-2 mb-0">* Hours might differ</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">📱</span>
+                        <h4>Follow Us</h4>
+                        <a href="social.html" class="social-link">View All Social Links →</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Footer
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="/images/logo.png" alt="Namma Millets Café" class="footer-logo">
+                    <p>Organic & Homely Food<br>Rooted in Karnataka's Heritage</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="social.html">Social Links</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-address">
+                    <h4>Visit Us</h4>
+                    <p>16th Cross, BTM 2nd Stage,<br>Bengaluru, Karnataka</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Namma Millets Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
