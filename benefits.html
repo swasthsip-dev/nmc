@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================
+         Namma Millets Café - Benefits Page
+         Health benefits of traditional ingredients
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the health benefits of our traditional millet-based ingredients like Ragi, Moong, Horse Gram, and more.">
+
+    <title>Health Benefits - Namma Millets Café</title>
+
+    <!-- SEO & Analytics (Same as index) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8B917CGTFH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8B917CGTFH');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Specific Styles for Benefits Page */
+        .benefits-hero {
+            background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+            padding: 120px 0 80px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefits-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: var(--bg-pattern);
+            opacity: 0.1;
+        }
+
+        .benefit-section {
+            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        .benefit-section:nth-child(even) {
+            background-color: var(--color-cream);
+        }
+
+        .benefit-content {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .benefit-content.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+        }
+
+        .benefit-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .benefit-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+
+        .ingredient-badge {
+            display: inline-block;
+            background: var(--color-accent-light);
+            color: var(--color-primary-dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive Reverse Order for layout */
+        @media (min-width: 992px) {
+            .order-lg-2-custom {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Namma Millets Café Logo" class="logo-img">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="benefits.html" class="nav-link active">Health Benefits</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close"><span>&times;</span></div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="benefits-hero">
+        <div class="container position-relative z-2">
+            <h1 class="display-4 fw-bold mb-3">Oracles of Wellness</h1>
+            <p class="lead mx-auto" style="max-width: 700px;">
+                Discover the timeless wisdom hidden in our traditional ingredients.
+                Nature’s own pharmacy, served in every cup.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Finger Millet (Ragi) Blend -->
+        <section class="benefit-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 benefit-content">
+                        <span class="ingredient-badge">Finger Millet & Nuts</span>
+                        <h2 class="display-6 fw-bold mb-4">Strength of the Earth</h2>
+                        <p class="text-muted lead">
+                            A memory, a tradition, and a gentle hug from your grandmother's kitchen.
+                            Simple, pure, and nourishing, this blend is a celebration of our roots.
+                        </p>
+                        <ul class="benefit-list">
+                            <li><strong>Strong Bones:</strong> Packed with natural calcium and iron to support joints.
+                            </li>
+                            <li><strong>Plant Power:</strong> Rich in plant-based protein to fuel your muscles.</li>
+                            <li><strong>Heart Loving:</strong> Naturally cholesterol-free and sodium-free.</li>
+                            <li><strong>Diabetic Friendly:</strong> Low glycemic index helps manage blood sugar.</li>
+                            <li><strong>Cooling Effect:</strong> Naturally cools the body, perfect for summer.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 benefit-content">
+                        <div class="position-relative">
+                            <!-- Using a generic healthy image placeholder logic -->
+                            <div class="rounded-5 overflow-hidden shadow-lg">
+                                <img src="images/ragi-drink.jpg" alt="Finger Millet Benefits" class="img-fluid w-100"
+                                    style="height: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Green Gram (Moong) Blend -->
+        <section class="benefit-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-2 benefit-content">
+                        <span class="ingredient-badge">Green Gram & Milk</span>
+                        <h2 class="display-6 fw-bold mb-4">Comfort in a Cup</h2>
+                        <p class="text-muted lead">
+                            Where nourishment meets warmth, and tradition meets today.
+                            Crafted with age-old ingredients for modern wellness.
+                        </p>
+                        <ul class="benefit-list">
+                            <li><strong>Natural Protein Powerhouse:</strong> Essential protein for energy and strength.
+                            </li>
+                            <li><strong>Cool & Gentle:</strong> Calms digestion and refreshes from within.</li>
+                            <li><strong>Healthy Fats:</strong> Good fats from ghee & nuts for a sharp mind.</li>
+                            <li><strong>Bone-Loving:</strong> Enriched with calcium for daily resilience.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 benefit-content">
+                        <div class="rounded-5 overflow-hidden shadow-lg">
+                            <img src="images/moong-drink.jpg" alt="Green Gram Benefits" class="img-fluid w-100"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Horse Gram (Huruli) Blend -->
+        <section class="benefit-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 benefit-content">
+                        <span class="ingredient-badge">Horse Gram Elixir</span>
+                        <h2 class="display-6 fw-bold mb-4">Ancient Secret to Strength</h2>
+                        <p class="text-muted lead">
+                            A quiet healer for all ages. A reminder that nature has always had the answers.
+                        </p>
+                        <ul class="benefit-list">
+                            <li><strong>Balances Blood Sugar:</strong> Helps prevent post-meal sugar spikes.</li>
+                            <li><strong>Kidney Support:</strong> Known to help flush out toxins naturally.</li>
+                            <li><strong>Natural Warmth:</strong> Generates body heat, perfect for cold days.</li>
+                            <li><strong>Iron Rich:</strong> Boosts hemoglobin and supports menstrual wellness.</li>
+                            <li><strong>Weight Balance:</strong> Traditionally used to help maintain healthy weight.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 benefit-content">
+                        <div class="rounded-5 overflow-hidden shadow-lg">
+                            <img src="images/hurali-drink.jpg" alt="Horse Gram Benefits" class="img-fluid w-100"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Multi-Millet Blend -->
+        <section class="benefit-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-2 benefit-content">
+                        <span class="ingredient-badge">Multi-Millet Combo</span>
+                        <h2 class="display-6 fw-bold mb-4">A Heritage of Health</h2>
+                        <p class="text-muted lead">
+                            Blending nature’s finest gifts — ragi, moong, toor, wheat, oats, and more — into a single,
+                            nourishing embrace.
+                        </p>
+                        <ul class="benefit-list">
+                            <li><strong>Heart Health:</strong> Magnesium-rich millets for cardiovascular support.</li>
+                            <li><strong>Immunity Boost:</strong> High-quality protein mix to fight infections.</li>
+                            <li><strong>Digestive Health:</strong> High fiber keeps you light and prevents constipation.
+                            </li>
+                            <li><strong>Sustained Energy:</strong> Balanced carbs and proteins prevent sugar crashes.
+                            </li>
+                            <li><strong>Overall Wellness:</strong> Supports skin health and restful sleep.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 benefit-content">
+                        <div class="rounded-5 overflow-hidden shadow-lg">
+                            <img src="images/mixed-millets.jpg" alt="Multi Millet Benefits" class="img-fluid w-100"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Banana & Nut Blend -->
+        <section class="benefit-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 benefit-content">
+                        <span class="ingredient-badge">Banana & Nuts</span>
+                        <h2 class="display-6 fw-bold mb-4">Nature’s Energy Elixir</h2>
+                        <p class="text-muted lead">
+                            A blend so rich, it feels like a hug from within. Instant vitality wrapped in creamy
+                            indulgence.
+                        </p>
+                        <ul class="benefit-list">
+                            <li><strong>Instant Energy:</strong> Vitamins and minerals for immediate alertness.</li>
+                            <li><strong>Heart & Brain:</strong> Healthy fats and antioxidants.</li>
+                            <li><strong>Immune Boosting:</strong> Strengthens body's natural defenses.</li>
+                            <li><strong>Natural Sweetness:</strong> No artificial sugars, just fruit power.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 benefit-content">
+                        <div class="rounded-5 overflow-hidden shadow-lg">
+                            <img src="images/smoothie.png" alt="Banana Nut Benefits" class="img-fluid w-100"
+                                style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Simplified) -->
+    <footer class="footer mt-0">
+        <div class="container text-center">
+            <div class="footer-content pt-5 pb-4">
+                <img src="images/logo.png" alt="Logo" style="height: 60px; margin-bottom: 20px;">
+                <p class="text-white-50">Organic & Homely Food<br>Rooted in Karnataka's Heritage</p>
+                <div class="mt-4">
+                    <a href="index.html" class="btn btn-primary" style="border: 1px solid white;">Back to Menu</a>
+                </div>
+            </div>
+            <div class="footer-bottom border-top border-secondary pt-3 pb-3">
+                <p class="mb-0 text-white-50">&copy; 2026 Namma Millets Café</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations -->
+    <script src="script.js"></script>
+    <script>
+        // Specific observer for this page content since standard script.js looks for specific classes
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-in");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.benefit-content').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>

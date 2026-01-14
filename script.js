@@ -387,9 +387,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
       this.appendChild(ripple);
 
+
       setTimeout(() => {
         ripple.remove();
       }, 600);
+    });
+  });
+
+  /* ============================================
+       Smooth Page Transitions
+       ============================================ */
+  // Intercept internal links for smooth exit transition
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+
+      // Check if it's an internal link
+      // 1. Not null
+      // 2. Not an anchor link (#)
+      // 3. Not mailto/tel
+      // 4. Not opening in new tab
+      // 5. Does not contain 'javascript:'
+      if (href &&
+        !href.startsWith('#') &&
+        !href.startsWith('mailto:') &&
+        !href.startsWith('tel:') &&
+        !href.startsWith('javascript:') &&
+        link.target !== '_blank') {
+
+        e.preventDefault();
+
+        // Show loader (Exit Animation)
+        if (loader) {
+          loader.classList.remove('hidden');
+          loader.style.display = 'flex'; // Ensure it's visible
+
+          // Optional: Restore opacity if it was set to 0 by CSS class
+          loader.style.opacity = '1';
+          loader.style.visibility = 'visible';
+        }
+
+        // Wait for fade in (500ms match css transition) then navigate
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500);
+      }
     });
   });
 })
