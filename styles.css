@@ -863,6 +863,10 @@ h6 {
   padding: var(--space-md);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-icon {
@@ -1470,6 +1474,36 @@ h6 {
   .social-header h1 {
     font-size: 1.5rem;
   }
+
+  /* Horizontal Scrolling for Mobile */
+  .mobile-horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    margin-right: -1rem;
+    /* Counteract container padding right */
+  }
+
+  .mobile-horizontal-scroll>* {
+    flex: 0 0 85%;
+    /* Show 85% of grid item width to peek next item */
+    max-width: 85%;
+    scroll-snap-align: center;
+  }
+
+  /* Hide scrollbar for cleaner look */
+  .mobile-horizontal-scroll::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .mobile-horizontal-scroll::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
 }
 
 /* Large Screens */
@@ -1706,5 +1740,36 @@ h6 {
   to {
     transform: scale(4);
     opacity: 0;
+  }
+}
+
+/* ============================================
+   Mobile Horizontal Scroll
+   ============================================ */
+@media screen and (max-width: 768px) {
+  .mobile-horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    /* Space for scrollbar */
+    gap: 1rem;
+    margin-right: -12px;
+    /* Offset container padding */
+  }
+
+  /* Hide scrollbar for cleaner look but keep functionality */
+  .mobile-horizontal-scroll::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+  }
+
+  .mobile-horizontal-scroll>* {
+    flex: 0 0 85% !important;
+    /* Reverted to show 1 item with peek */
+    max-width: 85% !important;
   }
 }
