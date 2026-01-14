@@ -338,8 +338,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroBg = document.querySelector(".hero-bg-image")
   if (heroBg) {
     const images = [
+      "images/smoothie.png",
       "images/bg2.jpg",
-      "images/bg1.png"
+      "images/laddu.png",
+      "images/bg1.png",
+      "images/moong-drink.jpg",
+      "images/hampi-heritage.jpg"
+
     ]
     let currentIndex = 0
 
