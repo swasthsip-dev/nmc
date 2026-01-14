@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Observe elements for animation
   const animateElements = document.querySelectorAll(
-    ".featured-card, .menu-category, .benefit-card, .vm-card, .contact-card",
+    ".featured-card, .menu-category, .menu-card, .benefit-card, .vm-card, .contact-card",
   )
 
   animateElements.forEach((el) => {
@@ -357,4 +357,39 @@ document.addEventListener("DOMContentLoaded", () => {
       heroBg.style.backgroundImage = `url("${images[currentIndex]}")`
     }, 5000) // Change image every 5 seconds
   }
+
+  /* ============================================
+       Parallax Effect for Hero Background
+       ============================================ */
+  window.addEventListener("scroll", () => {
+    const scrolled = window.pageYOffset
+    const heroBg = document.querySelector(".hero-bg-image")
+    if (heroBg) {
+      // Move background at 50% speed of scroll
+      heroBg.style.transform = `translateY(${scrolled * 0.5}px)`
+    }
+  })
+
+  /* ============================================
+       Button Ripple Effect
+       ============================================ */
+  const buttons = document.querySelectorAll(".btn")
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const ripple = document.createElement("span");
+      ripple.classList.add("ripple");
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+
+      this.appendChild(ripple);
+
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  });
 })
