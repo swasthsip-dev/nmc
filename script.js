@@ -439,4 +439,35 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  /* ============================================
+       Mobile Menu Tab Logic
+       ============================================ */
+  const menuTabs = document.querySelectorAll(".menu-tab")
+  const menuSections = document.querySelectorAll(".menu-category-section")
+
+  if (menuTabs.length > 0) {
+    menuTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        // Remove active class from all tabs
+        menuTabs.forEach(t => t.classList.remove("active"))
+        // Add active class to clicked tab
+        tab.classList.add("active")
+
+        // Get target category
+        const target = tab.getAttribute("data-target")
+
+        // Hide all sections
+        menuSections.forEach(section => {
+          section.classList.remove("active")
+        })
+
+        // Show target section
+        const activeSection = document.querySelector(`.menu-category-section[data-category="${target}"]`)
+        if (activeSection) {
+          activeSection.classList.add("active")
+        }
+      })
+    })
+  }
+
 })
